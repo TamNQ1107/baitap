@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý chi tiêu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ví dụ JSON API thời tiết</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #ket-qua { margin-top: 20px; font-size: 18px; color: #0288d1; font-weight: bold; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
 </head>
 <body>
-    <div class="wallet-container">
-        <h2>Ví điện tử</h2>
+
+    <h2>Ứng dụng xem thời tiết qua API</h2>
+    <button id="btn-lay-thoi-tiet">Xem thời tiết Hà Nội</button>
     
-        <div class="balance-box">
-            <p>Số dư: <span id="thongBaoSoDu">0</span> VND</p>
-        </div>
+    <div id="ket-qua">Bấm nút để tải dữ liệu...</div>
 
-        <div class="form-group">
-            <input type="text" id="ten-khoan" placeholder="Tên khoản chi tiêu">
-            <input type="number" id="so-tien" placeholder="Số tiền (VND)">
-        </div>
-
-        <div class="button-group">
-            <button id="btn-thu-nhap" class="btn-in">Thu nhập</button>
-            <button id="btn-chi-tieu" class="btn-out">Chi tiêu</button>
-        </div>
-    </div>
+    <script src="app.js"></script>
 </body>
-<script src="logic.js"></script>
 </html>
